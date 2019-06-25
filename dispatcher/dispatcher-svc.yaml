@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sgplm-test-dispatcher-nodeport
+  namespace: sgplm-test
+spec:
+  type: NodePort
+  clusterIP: 10.254.6.111
+  ports:
+    - name: http
+      port: 8080
+      nodePort: 31180
+      targetPort: 8080
+      protocol: TCP
+    - name: https
+      port: 443
+      nodePort: 31143
+      targetPort: 443
+      protocol: TCP
+  selector:
+    app: sgplm-test-dispatcher
