@@ -4,7 +4,7 @@ node('vipkid-sgplm') {
 	Version = env.Version
     }
     stage('Clone') {
-      git url: "https://github.com/witcombo/test-opc-ten"
+      git url: "https://github.com/witcombo/test-opc-ten.git"
     }
     stage('Test') {
       echo "2.Test Stage"
