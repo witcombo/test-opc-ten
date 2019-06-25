@@ -4,7 +4,7 @@ node('vipkid-sgplm') {
 	Version = env.Version
     }
     stage('Clone') {
-     echo "1.Clone" 
+     echo "1.Clone1" 
     }
     stage('Test') {
       echo "2.Test Stage"
