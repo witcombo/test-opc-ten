@@ -4,14 +4,17 @@ node('vipkid-sgplm') {
 	Version = env.Version
     }
     stage('Clone') {
-      	sh "git clone https://github.com/witcombo/test-opc-ten.git -b ${Service} && cd /test-opc-ten/${Service}"
+      	sh "git clone https://github.com/witcombo/test-opc-ten.git -b ${Service} && cd test-opc-ten/${Service}"
     }
     stage('wget') {
       	echo "2.Test Stage"
-      	sh "echo '172.31.0.39 harbor.vipkid-qa.com.cn' >> /etc/hosts;wget -c -r -nd -np -k -L -p --user=vipkid --password='rJAznMiYSpWaUuWI' http://10.104.36.9:18888/sgplm/$Service/$Version/"
+      	sh "echo '172.31.0.39 harbor.vipkid-qa.com.cn' >> /etc/hosts;curl -O http://10.104.36.9:18888/sgplm/${Service}/${Version}/${Service}"
     }
     stage('Build') {
-      	sh "docker build -t harbor.vipkid-qa.com.cn/sgplm-test/sgplm-${Service}:${Version} ."
+	withCredentials([usernamePassword(credentialsId: 'harbor', passwordVariable: 'harborPassword', usernameVariable: 'harborUser')]) {
+	    sh "docker login -u ${harborUser} -p ${harborPassword}"
+      	    sh "docker build -t harbor.vipkid-qa.com.cn/sgplm-test/sgplm-${Service}:${Version} test-opc-ten/${Service}/"
+	}
     }
     stage('Push') {
       	sh "docker push harbor.vipkid-qa.com.cn/sgplm-test/sgplm-${Service}:${Version}"
