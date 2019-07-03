@@ -1,5 +1,5 @@
 {
-  "DISPATCH_ADDR": "10.254.6.111:443",
+  "DISPATCH_ADDR": "172.31.0.27:443",
   "DISPATCH_QUERY": "controller\/getKPService?roomId=",
   "HUB_SERV_ADDR": "10.109.20.112:8899",
   "HUB_SERV_GETTOKEN_PATH": "api\/hubserver\/getUserToken",
@@ -14,7 +14,7 @@
   "GLOBAL_DISCOVER_KP": {
     "1": "ol/signal/kpconfig_tx"
   },
-  "LOCAL_IP": "10.254.6.110",
+  "LOCAL_IP": "172.31.0.27",
   "LOG_CONSOLE_DISPLAY": 0,
   "LOG_LEVEL": "DEBUG",
   "LOG_PATH": "/data/logs/signalproxy/signalproxy.log",
@@ -33,7 +33,7 @@
   "TLS_CERT_PATH": "./cert/server.crt",
   "TLS_KEY_PATH": "./cert/server.key",
   "TLS_PORT": "8443",
-  "TLS_DOMAIN": "10.254.6.110",
+  "TLS_DOMAIN": "172.31.0.27",
   "WEB_SERV_ADDR":"172.31.13.57:8084",
   "WEB_SERV_GETTOKEN_PATH": "api/webserver/room/getUserToken",
   "WS_READ_DEADLINE": 15,
