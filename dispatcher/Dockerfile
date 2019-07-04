@@ -8,3 +8,4 @@ LABEL vendor=VipKid\ OnlineClass \
 RUN mkdir -p /usr/local/dispatcher/ /data/logs/dispatcher
 COPY dispatcher /usr/local/dispatcher/dispatcher-etcd.jar
 COPY keyStore.p12 /usr/local/dispatcher
+COPY application.properties /usr/local/dispatcher
