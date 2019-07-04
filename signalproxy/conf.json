@@ -68,7 +68,39 @@
   "LONGPOLL_ROOM_TIMEOUT":2000000,
   "LONGPOLL_POLL_TIME_OUT":60000,
   "HTTPS_CERT_PATH":"./cert/server.crt",
-  "HTTPS_KEY_PATH":"./cert/server.key"
+  "HTTPS_KEY_PATH":"./cert/server.key",
 
+
+"LINE_INFOS":[
+    {
+    "ETCD_ADDR": [
+    "http://10.109.20.107:2379",
+    "http://10.109.20.108:2379",
+    "http://10.109.20.109:2379"
+    ],
+    "ETCD_KP_PATH":"ol/signal/kpconfig",
+    "REDIS_ADDR":"10.109.20.107:7535,10.109.20.107:7536,10.109.20.108:7535,10.109.20.108:7536,10.109.20.109:7535,10.109.20.109:7536",
+    "REDIS_PWD":"",
+    "HUB_SERV_ADDR":"10.109.20.112:8899",
+    "HUB_SERV_GETTOKEN_PATH":"api\/hubserver\/getUserToken"
+    },
+    {
+    "ETCD_ADDR": [
+    "http://172.31.13.155:2379",
+    "http://172.31.13.3:2379",
+    "http://172.31.13.68:2379"
+    ],
+    "ETCD_KP_PATH":"ol/signal/kpconfig_tx",
+    "REDIS_ADDR":"172.31.13.155:7535,172.31.13.155:7536,172.31.13.3:7535,172.31.13.3:7536,172.31.13.68:7535,172.31.13.68:7536",
+    "REDIS_PWD":"",
+    "HUB_SERV_ADDR":"10.109.20.112:8899",
+    "HUB_SERV_GETTOKEN_PATH":"api\/hubserver\/getUserToken"
+    }
+    ],
+    "LINE_RULE_ETCD_PATH":"ol/signal/strategy/center/product",
+    "ROOM_LINE_RULE_ETCD_PATH":"ol/signal/strategy/center/room",
+    "DEF_LINE":1,
+    "PRODUCT_STRATEGY_ACK_PATH":"ol/signal/proxy/ack/product/",
+    "ROOM_STRATEGY_ACK_PATH":"ol/signal/proxy/ack/room/"
 
 }
