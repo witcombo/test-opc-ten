@@ -7,4 +7,4 @@ MAINTAINER SignalingTeam "lichunpeng@vipkid.com.cn"
 
 RUN mkdir -p /usr/local/dispatcher/ /data/logs/dispatcher
 COPY dispatcher /usr/local/dispatcher/dispatcher-etcd.jar
-COPY keyStore.p12 logback-spring.xml application.properties /usr/local/dispatcher
+COPY keyStore.p12 logback-spring.xml application.properties /usr/local/dispatcher/
