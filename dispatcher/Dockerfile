@@ -3,7 +3,7 @@ LABEL vendor=VipKid\ OnlineClass \
       sgplm-dispatcher.is-production="" \
       sgplm-dispatcher.version="<build_tag>" \
       sgplm-dispatcher.release-date="2019-06-06"
-MAINTAINER SignalingTeam "lichunpeng@vipkid.com.cn"
+MAINTAINER SignalingTeam "@vipkid.com.cn"
 
 RUN mkdir -p /usr/local/dispatcher/ /data/logs/dispatcher
 COPY dispatcher /usr/local/dispatcher/dispatcher-etcd.jar
