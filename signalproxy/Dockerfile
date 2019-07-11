@@ -5,6 +5,5 @@ LABEL vendor=VipKid\ OnlineClass \
       sgplm-signalproxy.release-date="2019-06-06"
 
 RUN mkdir -p /usr/local/signalproxy/cert /data/logs/signalproxy
-COPY signalproxy /usr/local/signalproxy
+COPY signalproxy conf.json /usr/local/signalproxy/
 COPY cert /usr/local/signalproxy/cert
-COPY conf.json /usr/local/signalproxy

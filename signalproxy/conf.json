@@ -14,7 +14,7 @@
   "GLOBAL_DISCOVER_KP": {
     "1": "ol/signal/kpconfig_tx"
   },
-  "LOCAL_IP": "172.31.0.27",
+  "LOCAL_IP": "<PODIP>",
   "LOG_CONSOLE_DISPLAY": 0,
   "LOG_LEVEL": "DEBUG",
   "LOG_PATH": "/data/logs/signalproxy/signalproxy.log",
@@ -33,7 +33,7 @@
   "TLS_CERT_PATH": "./cert/server.crt",
   "TLS_KEY_PATH": "./cert/server.key",
   "TLS_PORT": "8443",
-  "TLS_DOMAIN": "172.31.0.27",
+  "TLS_DOMAIN": "<PODIP>",
   "WEB_SERV_ADDR":"172.31.13.57:8084",
   "WEB_SERV_GETTOKEN_PATH": "api/webserver/room/getUserToken",
   "WS_READ_DEADLINE": 15,
