@@ -16,7 +16,7 @@
   },
   "LOCAL_IP": "<PODIP>",
   "LOG_CONSOLE_DISPLAY": 0,
-  "LOG_LEVEL": "DEBUG",
+  "LOG_LEVEL": "INFO",
   "LOG_PATH": "/data/logs/signalproxy/signalproxy.log",
   "PORT": "8787",
   "REDIS_EP_ADDR":"10.254.6.101:6379",
