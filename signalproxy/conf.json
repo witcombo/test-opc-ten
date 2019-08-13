@@ -101,6 +101,11 @@
     "ROOM_LINE_RULE_ETCD_PATH":"ol/signal/strategy/center/room",
     "DEF_LINE":1,
     "PRODUCT_STRATEGY_ACK_PATH":"ol/signal/proxy/ack/product/",
-    "ROOM_STRATEGY_ACK_PATH":"ol/signal/proxy/ack/room/"
+    "ROOM_STRATEGY_ACK_PATH":"ol/signal/proxy/ack/room/",
+    "ETCD_ADDR_REMOTE": [
+    "http://10.109.20.107:2380",
+    "http://10.109.20.108:2380",
+    "http://10.109.20.109:2380"
+    ]
 
 }
