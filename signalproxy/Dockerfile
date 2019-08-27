@@ -3,6 +3,7 @@ LABEL vendor=VipKid\ OnlineClass \
       sgplm-signalproxy.is-production="" \
       sgplm-signalproxy.version="1.1" \
       sgplm-signalproxy.release-date="2019-06-06"
+MAINTAINER SignalingTeam "@vipkid.com.cn"
 
 RUN mkdir -p /usr/local/signalproxy/cert /data/logs/signalproxy
 COPY signalproxy conf.json /usr/local/signalproxy/
